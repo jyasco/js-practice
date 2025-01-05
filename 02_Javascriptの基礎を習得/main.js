@@ -1,3 +1,7 @@
 'use strict';
 
-console.log('Hello! I\'m Marika Suzuki.');
+let myColor = 'Red';
+console.log(myColor);
+
+myColor = 'Green';
+console.log(myColor);
