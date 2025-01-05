@@ -1,7 +1,6 @@
 'use strict';
 
-let myColor = 'Red';
-console.log(myColor);
+const PI =3.14;
+console.log(PI);
 
-myColor = 'Green';
-console.log(myColor);
+PI = 3.1;
