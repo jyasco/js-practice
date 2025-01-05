@@ -1,15 +1,29 @@
 'use strict';
 
-let myName = 'Suzuki';
-let num = 123;
-let dec = 123.456;
+let ans = 1 + 2;
+console.log(ans);
 
-console.log(myName);
-console.log(num);
-console.log(dec);
+let i = 20;
+let j = 10;
+let ans1 = i + j;
+console.log(ans1);
 
-console.log(typeof myName);
+let ans2 = i - j;
+console.log(ans2);
 
-myName = 456
-console.log(myName);
-console.log(typeof myName);
+let ans3 = i * j;
+console.log(ans3);
+
+let ans4 = i / j;
+console.log(ans4);
+
+let x = 3;
+let y = 2;
+let ans5 = x / y;
+console.log(ans5);
+
+let ans6 = x % y;
+console.log(ans6);
+
+let ans7 = Math.pow(x, y);
+console.log(ans7);
