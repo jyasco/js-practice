@@ -1,6 +1,15 @@
 'use strict';
 
-const PI =3.14;
-console.log(PI);
+let myName = 'Suzuki';
+let num = 123;
+let dec = 123.456;
 
-PI = 3.1;
+console.log(myName);
+console.log(num);
+console.log(dec);
+
+console.log(typeof myName);
+
+myName = 456
+console.log(myName);
+console.log(typeof myName);
