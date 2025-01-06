@@ -1,8 +1,10 @@
 'use strict';
 
-let birthYear = '2000';
-let age = 18;
+let b = false;
+// if(b){
+//   console.log('はい');
+// } else {
+//   console.log('いいえ');
+// }
 
-console.log(Number(birthYear)+ age);
-
-console.log(Number('Suzuki'));
+console.log(!b);
