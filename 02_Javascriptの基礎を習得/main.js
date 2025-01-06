@@ -1,31 +1,14 @@
 'use strict';
-// && 論理AND
-console.log(true && true);
-console.log(true && false);
-console.log(false && true);
-console.log(false && false);
+// 例題）2の倍数、かつ、3の倍数のときに、
+// メッセージを表示する
 
-// || 論理OR
-console.log(true || true);
-console.log(true || false);
-console.log(false || true);
-console.log(false || false);
+let num = 12;
+if(num % 2 === 0) {
+  if (num % 3 === 0){
+    console.log(`${num}は２の倍数かつ３の倍数です`);
+  }
+}
 
-// ! 論理NOT
-console.log(!true);
-console.log(!false);
-
-// ! && ||
-console.log(false && true || true);
-console.log(false && (true || true));
-
-// 例題）運転免許証を持っていて、
-// かつ、いわゆるゴールド免許の場合には、
-// 「あなたは優良ドライバーです」と表示する。
-
-let hasDriversLicense = true;
-let hasGoldLicense = true;
-
-if (hasDriversLicense && hasGoldLicense){
-  console.log('あなたは優良ドライバーです');
+if(num % 2 === 0 && num % 3 === 0){
+  console.log(`${num}は２の倍数かつ３の倍数です`);
 }
