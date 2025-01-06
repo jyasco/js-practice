@@ -1,46 +1,34 @@
 'use strict';
-// 例題）入賞メッセージの出力。
-// 順位numによって、出力するメッセージを変えるプログラム
-// 1 → 金賞
-// 2 → 銀賞
-// 3 → 銅賞
-// 4 → 4位
-// 5 → 5位
-// それ以外の値 → 選外
+// ■ 演習問題
+// おみくじプログラムの作成.
+// switch文を使用。
+//
+// 変数numの値によってコンソールへの出力を変える。
+// 1→大吉
+// 2→中吉
+// 3→小吉
+// 4→吉
+// 5→凶
+// それ以外→ 想定外の数値です。
 
-let num = 6;
-switch(num) {
+let num = Math.floor(Math.random() * 5 + 1);
+
+switch(num){
   case 1:
-    console.log('金賞');
+    console.log('大吉');
     break;
   case 2:
-    console.log('銀賞');
+    console.log('中吉');
     break;
   case 3:
-    console.log('銅賞');
+    console.log('小吉');
     break;
   case 4:
-    console.log('4位');
+    console.log('吉');
     break;
   case 5:
-    console.log('5位');
+    console.log('凶');
     break;
   default:
-    console.log('選外');
-    // break;
-}
-
-
-if(num === 1) {
-  console.log('金賞');
-} else if(num === 2) {
-  console.log('銀賞');
-} else if(num === 3 ) {
-  console.log('銅賞');
-} else if(num === 4) {
-  console.log('4位');
-} else if(num === 5) {
-  console.log('5位');
-} else {
-  console.log('選外');
+    console.log('想定外の数値です');
 }
