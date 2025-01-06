@@ -1,16 +1,27 @@
 'use strict';
-// 演習問題「みかんの合計金額を計算するプログラム」
-// Aさんが1個100円のみかんを、20個買いました。 
-// みかんの単価と個数を引数に渡すと、
-// 合計金額を計算して返す関数を作成。
-// 作成した関数を呼び出して、
-// Aさんの支払合計金額はいくらになるか計算して、
-// コンソールに出力する。
-// ※消費税は考慮しないものとする。 
-// 回答例では、function 命令で定義する方法で、実装。
+// 例1 タイマー処理
+// 3秒経過したら、
+// コンソールに「Timeout!」と表示する
 
-function getTotalPrice(price, n){
-  return price * n;
+// const displayMessage = function(){
+//   console.log('Timeout!');
+// }
+
+// setTimeout(displayMessage, 3000);
+
+
+// 例2
+// 名前入力完了したら
+// コンソールに「Hello! 〇〇-san.」と表示する
+
+// コールバック関数
+function greeting(name){
+  console.log('Hello!' + name + '-san.');
 }
 
-console.log(getTotalPrice(100, 20));
+function inputUserName(callback){
+  let name = prompt('あなたのお名前を入力してください！');
+  callback(name);
+}
+
+inputUserName(greeting);
