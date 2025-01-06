@@ -1,34 +1,22 @@
 'use strict';
-// ■ 演習問題
-// おみくじプログラムの作成.
-// switch文を使用。
-//
-// 変数numの値によってコンソールへの出力を変える。
-// 1→大吉
-// 2→中吉
-// 3→小吉
-// 4→吉
-// 5→凶
-// それ以外→ 想定外の数値です。
+// undefined
+// 未定義。変数を宣言したが、値は代入していない状態。
 
-let num = Math.floor(Math.random() * 5 + 1);
+// null
+// 変数は定義されているが、該当する値が無い状態。
 
-switch(num){
-  case 1:
-    console.log('大吉');
-    break;
-  case 2:
-    console.log('中吉');
-    break;
-  case 3:
-    console.log('小吉');
-    break;
-  case 4:
-    console.log('吉');
-    break;
-  case 5:
-    console.log('凶');
-    break;
-  default:
-    console.log('想定外の数値です');
+// undefined
+let x;
+console.log(x);
+
+// null
+let item = null;
+console.log(item);
+
+if(x === undefined) {
+  console.log('undefinedです');
+}
+
+if(item === null) {
+  console.log('nullです');
 }
