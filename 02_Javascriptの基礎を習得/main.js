@@ -1,27 +1,23 @@
 'use strict';
-// 例1 タイマー処理
-// 3秒経過したら、
-// コンソールに「Timeout!」と表示する
+// 宣言、初期化
+let colors = ['Red','Green','Blue'];
 
-// const displayMessage = function(){
-//   console.log('Timeout!');
-// }
+console.log(colors);
+console.log(colors[0]);
+console.log(colors[1]);
+console.log(colors[2]);
+console.log(colors[3]);
 
-// setTimeout(displayMessage, 3000);
+// データ型異なってもエラーは出ない
+let arr = [1, '2', 3, ['a', 'b', 'c']];
+console.log(arr);
 
+// 個数
+console.log(colors.length);
 
-// 例2
-// 名前入力完了したら
-// コンソールに「Hello! 〇〇-san.」と表示する
+// 末尾の値
+console.log(colors[colors.length - 1]);
 
-// コールバック関数
-function greeting(name){
-  console.log('Hello!' + name + '-san.');
-}
-
-function inputUserName(callback){
-  let name = prompt('あなたのお名前を入力してください！');
-  callback(name);
-}
-
-inputUserName(greeting);
+// 空の配列
+let emptyArr = [];
+console.log(emptyArr);
