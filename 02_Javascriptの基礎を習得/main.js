@@ -1,13 +1,22 @@
 'use strict';
 
-let temperature = 29;
-if (temperature > 28 ){
-  console.log('冷房稼働！');
-}
+// 例題
+// テストの点数xによって
+// 通知表の成績をコンソールに
+// 出力するプログラムを書く
 
-let g = 101;
-if (g >= 100){
-  console.log('100以上');
+// 90点以上 A
+// 80点以上 B
+// 60点以上 C
+// 60点未満 D
+
+let x = 90;
+if (x >= 90){
+  console.log('A');
+} else if (x >= 80){
+  console.log('B');
+} else if (x >= 60){
+  console.log('C');
 } else {
-  console.log('100以上では無い');
-} 
+  console.log('D');
+}
