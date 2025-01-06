@@ -3,21 +3,44 @@
 let colors = ['Red','Green','Blue'];
 
 console.log(colors);
-console.log(colors[0]);
-console.log(colors[1]);
-console.log(colors[2]);
-console.log(colors[3]);
 
-// データ型異なってもエラーは出ない
-let arr = [1, '2', 3, ['a', 'b', 'c']];
-console.log(arr);
+// 末尾に追加
+colors.push('Black');
+console.log(colors);
 
-// 個数
-console.log(colors.length);
+// 先頭に追加
+colors.unshift('white');
+console.log(colors);
 
-// 末尾の値
-console.log(colors[colors.length - 1]);
+// 更新
+colors[1] = 'Aka';
+console.log(colors);
 
-// 空の配列
-let emptyArr = [];
-console.log(emptyArr);
+
+// 指定した位置に1つ以上の値を挿入
+let insertArr = ['a', 'b', 'c'];
+insertArr.splice(1, 0, 'D');
+console.log(insertArr);
+
+// 複数挿入
+insertArr.splice(2, 0, 'X', 'Y', 'Z');
+console.log(insertArr);
+
+// 指定した位置から削除
+insertArr.splice(2, 2)
+console.log(insertArr);
+
+// 結合
+let arr1 =['a', 'b', 'c'];
+let arr2 =['d', 'e', 'f'];
+let mergedArr = arr1.concat(arr2);
+console.log(mergedArr);
+
+// 先頭を削除
+let arr3 =['a', 'b', 'c', 'd'];
+arr3.shift();
+console.log(arr3);
+
+// 末尾を削除
+arr3.pop();
+console.log(arr3);
