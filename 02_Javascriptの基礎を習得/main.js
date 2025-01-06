@@ -1,16 +1,13 @@
 'use strict';
 
-// 例題) 配列から一つずつ
-// 要素を取り出してコンソールに出力
-
-let colors = ['Red', 'Green', 'Blue'];
-
-// for文を使用する場合
-for( let i = 0; i < colors.length; i++ ){
-  console.log(colors[i]);
+// 配列の場合
+const colors = ['Red', 'Green', 'Blue'];
+for(const color of colors) {
+  console.log(color);
 }
 
-// forEachを使用する場合
-colors.forEach(function(color){
-  console.log(color)
-});
+// 文字列の場合
+const str = 'JavaScript';
+for(const value of str){
+  console.log(value);
+}
