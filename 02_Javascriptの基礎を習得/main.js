@@ -1,7 +1,7 @@
 'use strict';
 // 例題：四角形の面積を求める関数
-function rectangle(height, width){
+const getRectangle = function (height, width){
   return height * width;
 }
 
-console.log(rectangle(3,5));
+console.log(getRectangle(3,5));
