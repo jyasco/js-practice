@@ -1,23 +1,31 @@
 'use strict';
-// 演習問題：
-// Aさんの 体重は60kg, 身長は1.7mです。
-// ①復習：AさんのBMIを求めて出力
-// BMI = 体重kg / (身長m * 身長m)
-// ②BMIの数値により「痩せ」「普通」「肥満」を出力
-// 25以上が「肥満」
-// 18.5以上25未満が「普通」
-// 18.5未満が「痩せ」
+// && 論理AND
+console.log(true && true);
+console.log(true && false);
+console.log(false && true);
+console.log(false && false);
 
-let mass = 60;
-let height = 1.7;
-let bmi = mass / (height * height);
+// || 論理OR
+console.log(true || true);
+console.log(true || false);
+console.log(false || true);
+console.log(false || false);
 
-console.log(bmi);
+// ! 論理NOT
+console.log(!true);
+console.log(!false);
 
-if (bmi >= 25){
-  console.log('肥満');
-} else if(bmi >= 18.5){
-  console.log('普通');
-} else {
-  console.log('痩せ');
+// ! && ||
+console.log(false && true || true);
+console.log(false && (true || true));
+
+// 例題）運転免許証を持っていて、
+// かつ、いわゆるゴールド免許の場合には、
+// 「あなたは優良ドライバーです」と表示する。
+
+let hasDriversLicense = true;
+let hasGoldLicense = true;
+
+if (hasDriversLicense && hasGoldLicense){
+  console.log('あなたは優良ドライバーです');
 }
