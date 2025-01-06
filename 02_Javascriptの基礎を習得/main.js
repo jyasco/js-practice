@@ -1,9 +1,16 @@
 'use strict';
 
-// 例題1) do while文を使って
-// コンソールに1~3の数字を表示
-let i = 1;
-do {
-  console.log(i);
-  i++;
-} while (i <= 3);
+// 例題) 配列から一つずつ
+// 要素を取り出してコンソールに出力
+
+let colors = ['Red', 'Green', 'Blue'];
+
+// for文を使用する場合
+for( let i = 0; i < colors.length; i++ ){
+  console.log(colors[i]);
+}
+
+// forEachを使用する場合
+colors.forEach(function(color){
+  console.log(color)
+});
