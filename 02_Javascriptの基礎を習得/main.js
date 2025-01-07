@@ -1,33 +1,22 @@
 'use strict';
+// window.console.log('Hello');
+// コンソール出力
+// console.log('Hello');
 
-// 追加処理
-let addButton = document.getElementById('addButton');
-addButton.addEventListener('click', function(e){
-  // 入力欄のinput要素を取得
-  let inputLanguage = document.getElementById('inputLanguage');
-  // input要素から文字列を取得
-  let language = inputLanguage.value;
-  if( language === '' ){
-    alert('未入力です');
-    return;
-  }
-  // li要素を作成
-  let listItem = document.createElement('li');
-  // li要素のコンテンツに入力された文字列を設定
-  listItem.textContent = language;
-  // ul要素を取得
-  let languageList = document.getElementById('languageList');
-  // リストの末尾に、生成したli要素を追加
-  languageList.appendChild(listItem);
-  // 入力欄をクリア
-  inputLanguage.value = '';
+// 警告表示
+// window.alert('Are you OK?');
+
+// 確認ダイアログ
+// window.confirm('Are you OK?');
+
+// 別のWindowを開く
+// window.open('https://www.google.co.jp');
+
+// Windowを閉じる
+// window.close();
+
+// スクロール
+let btn = document.getElementById('triggerButton');
+btn.addEventListener('click', function(e){
+  window.scroll(0, 300);
 }, false);
-
-// 削除処理
-let removeButton = document.getElementById('removeButton');
-removeButton.addEventListener('click', function(e){
-  // ul要素を取得
-  let languageList = document.getElementById('languageList');
-  // リストの末尾から要素を削除
-  languageList.removeChild(languageList.lastElementChild);
-}, false); 
