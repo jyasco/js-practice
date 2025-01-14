@@ -1,22 +1,21 @@
 'use strict';
-// window.console.log('Hello');
-// コンソール出力
-// console.log('Hello');
+const sayHelloButton = document.getElementById('sayHelloButton');
+// sayHelloButton.addEventListener('click', function(e){
+//   console.log('Hello!');
+//   console.log(e);
+// }, false);
 
-// 警告表示
-// window.alert('Are you OK?');
+// sayHelloButton.addEventListener('click', function(){
+//   console.log('Hello!');
+// }, false);
 
-// 確認ダイアログ
-// window.confirm('Are you OK?');
+// sayHelloButton.addEventListener('click', (e) => {
+//   console.log('Hello!');
+//   console.log(e);
+// }, false);
 
-// 別のWindowを開く
-// window.open('https://www.google.co.jp');
-
-// Windowを閉じる
-// window.close();
-
-// スクロール
-let btn = document.getElementById('triggerButton');
-btn.addEventListener('click', function(e){
-  window.scroll(0, 300);
-}, false);
+function sayHelloEventHandler(e) {
+  console.log('Hello');
+  console.log(e);
+}
+sayHelloButton.addEventListener('click', sayHelloEventHandler, false);
