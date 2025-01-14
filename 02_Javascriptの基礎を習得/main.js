@@ -1,16 +1,14 @@
 'use strict';
-// 例題
-// 「Now Loading...」表示 + 画像表示をする
-// DOMContentLoadedイベントが発生したら、alertダイアログを表示する。
-// loadイベントが発生したら、「Now Loading...」を非表示にする
+const counter = document.getElementById('counter');
+const countUpButton = document.getElementById('countUpButton');
+const resetButton = document.getElementById('resetButton');
 
-// DOMContentLoaded
-document.addEventListener('DOMContentLoaded', function(){
-  alert('DOMContentLoaded');
+let num = 0;
+countUpButton.addEventListener('click', function(){
+  num = num + 1;
+  counter.textContent = num;
 }, false);
 
-// loadイベントが呼ばれたらNowLoadingを非表示
-window.onload = function(){
-  const nowLoading = document.getElementById('nowLoading');
-  nowLoading.style.display = 'none'
-}
+resetButton.addEventListener('click', function(){
+  counter.textContent = 0;
+}, false);
