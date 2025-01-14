@@ -1,14 +1,8 @@
 'use strict';
-const counter = document.getElementById('counter');
-const countUpButton = document.getElementById('countUpButton');
-const resetButton = document.getElementById('resetButton');
+// イベントハンドラ
+function keyUp(e) {
+  console.log(inputText.value.length)
+}
 
-let num = 0;
-countUpButton.addEventListener('click', function(){
-  num = num + 1;
-  counter.textContent = num;
-}, false);
-
-resetButton.addEventListener('click', function(){
-  counter.textContent = 0;
-}, false);
+const inputText = document.getElementById('inputText');
+inputText.addEventListener('keyup', keyUp, false);
