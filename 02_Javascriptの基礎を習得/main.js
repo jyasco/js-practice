@@ -1,25 +1,9 @@
 'use strict';
-// イベントハンドラ
-function keyUp(e) {
-  // 入力された値を取得
-  let str = inputText.value;
-  str = str.replace(/\r?\n/g, ''); // 第一引数を第二引数に置換する
-  // 残りの文字数
-  let num = 10 - str.length;
-  console.log(num);
-  // 文字数表示部分の要素を取得
-  const characterCount = document.getElementById('characterCount');
-  // 残りの文字数をセットして表示
-  characterCount.textContent = num;
-  // 残り文字数表示部分のp要素を取得
-  const characterCountWrap = document.getElementById('characterCountWrap');
-  // 文字色の設定
-  if(num >= 0){
-    characterCountWrap.style.color = 'black';
-  } else {
-    characterCountWrap.style.color = 'red';
-  }
-}
-
-const inputText = document.getElementById('inputText');
-inputText.addEventListener('keyup', keyUp, false);
+'use strict';
+const images = [
+  {src: 'https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/javascript/C0zDWAPFT9A.jpg', description: '猫の画像1'},
+  {src: 'https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/javascript/fEK4jvgnApg.jpg', description: '猫の画像2'},
+  {src: 'https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/javascript/egfS7HzgKcc.jpg', description: '猫の画像3'},
+  {src: 'https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/javascript/e-S23SJzFqs.jpg', description: '猫の画像4'},
+  {src: 'https://learnwithnakamura.s3.ap-northeast-1.amazonaws.com/javascript/Hnwm8ktAd6E.jpg', description: '猫の画像5'}
+];
