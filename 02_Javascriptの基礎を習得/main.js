@@ -20,3 +20,12 @@ description.textContent = image.alt;
 let mainImage = document.getElementById('main_image');
 mainImage.insertBefore(image, null);
 mainImage.insertBefore(description, null);
+
+// サムネイル画像の表示
+let thumbnails = document.getElementById('thumbnails'); //HTML側のidがthumbnailsの要素を取得
+for(let i = 0; i < images.length; i++){  //thumbnailsの子要素に画像を追加していく処理
+  let thumbnailImage = document.createElement('img');  //image要素を生成し変数に代入
+  thumbnailImage.setAttribute('src', images[i].src);  //thumbnailImageに属性を追加（第一引数が属性名、第二引数が属性の値）
+  thumbnailImage.setAttribute('alt', images[i].description);  //thumbnailImageに属性を追加
+  thumbnails.insertBefore(thumbnailImage, null);
+}
