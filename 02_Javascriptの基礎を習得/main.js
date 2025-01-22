@@ -29,3 +29,12 @@ for(let i = 0; i < images.length; i++){  //thumbnailsの子要素に画像を追
   thumbnailImage.setAttribute('alt', images[i].description);  //thumbnailImageに属性を追加
   thumbnails.insertBefore(thumbnailImage, null);
 }
+
+// クリックしたサムネイル画像をメイン画像に設定する
+thumbnails.addEventListener('click', function(e){
+  if(e.target.src){
+    //console.log(e.target);
+    image.src = e.target.src;
+    description.textContent = e.target.alt;
+  }
+}, false);
